@@ -1,12 +1,25 @@
+import Editor from './components/Editor';
+import Header from './components/Header';
+import Visuzalizer from './components/Visualizer';
+import MarkdownProvider from './hooks/useMarkdown';
 import './styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Hello world!
-      </header>
-    </div>
+    <MarkdownProvider>
+      <div className="App_Container">
+        <Header />
+        <main className="App">
+          <div>
+            <Editor/>
+
+          </div>
+          <div>
+            <Visuzalizer />
+          </div>
+        </main>
+      </div>
+    </MarkdownProvider>
   );
 }
 

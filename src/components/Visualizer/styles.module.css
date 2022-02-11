@@ -1,0 +1,6 @@
+.container {
+  width: 100%;
+  max-width: calc(100vh - 50%);
+  height: 100%;
+  padding: 1.5rem;
+}
